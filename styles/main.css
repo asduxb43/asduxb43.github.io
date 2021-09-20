@@ -3229,24 +3229,24 @@ a {
 }
 
       .posttitlewithoutimg {
-        color: #845ef7;
+        color: #495057;
       }
     
       .sitename {
-        color: #dee2e6;
+        color: #748ffc;
       }
     
         .describtion {
-          color: #e9ecef;
+          color: #f03e3e;
         }
       
         .menubutton {
-          color: #ffc9c9;
+          color: #5f3dc4;
         }
 
         .menucontainer span::before,
         .menucontainer span::after {
-          color:#ffc9c9;
+          color:#5f3dc4;
           content: attr(data-text);
           position: absolute;
           top: -0.5em;
@@ -3256,22 +3256,22 @@ a {
         }
 
         .menubutton:visited{
-          color: #ffc9c9;
+          color: #5f3dc4;
         }
       
         .posttitle {
-          color: #d0ebff;
+          color: #868e96;
         }
       
         #sitegotimeDate,#sitegotimes,#footinfo,#footinfo a{
-          color: #cc5de8;
+          color: #f3d9fa;
         }
       
         .mobiledescribtion{
-          color: #cc5de8;
+          color: #f3d9fa;
         }
       
         .navbar-inverse{
-          background-color: #bac8ff;
+          background-color: #ffc9c9;
         }
       
