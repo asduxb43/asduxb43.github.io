@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://asduxb43.github.io//media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://asduxb43.github.io//styles/main.css">
     
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/dracula.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
     
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
@@ -82,6 +82,147 @@
 
     <!--------------- 左侧菜单栏👇 ------------------------>
     
+    <div id=side>
+        <div class="r_m_div">
+            <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
+                        src='https://asduxb43.github.io//media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
+        </div>
+        <div class="avatar-border">
+            <img src="https://asduxb43.github.io//images/avatar.png?v=1632127697439" class="avatar">
+        </div>
+        <div class="sitename">asduxb43</div>
+        <span class="description" data-text='["温故而知新"]'>&nbsp;</span>
+        <div class="siteinfocontainer">
+            <span class="siteinfo">文章</span>
+            <span class="siteinfo">标签</span>
+        </div>
+        <div class="siteinfocontainer">
+            <span class="siteinfo" id="siteinfo-postsnum"></span>
+            <span class="siteinfo">1</span>
+        </div>
+        
+        <div class="search">
+            <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
+            <input type="text" class="search-input" placeholder="标题搜索 ⚆_⚆ つ♡">
+            <div class="search-results"></div>
+        </div>
+        
+    <div class="share-button">
+        <span></span>
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    <div id="qq" style="display:none"></div>
+    <!------------ 加载菜单按钮👇 ------------------------->
+    <div class="menucontainer">
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="首页"></i>&nbsp;<span
+                    data-text="首页">首页</span>
+            </a>
+        </div>
+        
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/archives" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="归档"></i>&nbsp;<span
+                    data-text="归档">归档</span>
+            </a>
+        </div>
+        
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/tags" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="标签"></i>&nbsp;<span
+                    data-text="标签">标签</span>
+            </a>
+        </div>
+        
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/post/about" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="关于"></i>&nbsp;<span
+                    data-text="关于">关于</span>
+            </a>
+        </div>
+        
+        
+
+        
+        
+            <div class="mchocie description">
+                <a data-pjax href="https://asduxb43.github.io//bber" class="menubutton" style="margin-right: 15px;">
+                    <i><img class="icon menuicon" src="" alt="哔哔"></i>&nbsp;<span data-text="哔哔">哔哔</span>
+                </a>
+            </div>
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="https://asduxb43.github.io//friends" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="友人帐"></i>&nbsp;<span data-text="友人帐">友人帐</span>
+            </a>
+        </div>
+        
+        <!--  -->
+    </div>
+    <!------------ 加载菜单按钮👆 ------------------------->
+    <hr>
+    <style>
+    .copyright {
+        font-size: 15px;
+        color: #d9d9d9;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        .foot {
+            width: 100%;
+            height: 130px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .foot {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="foot">
+        <div id="footinfo">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | Theme: <a
+                href="https://github.com/850552586/gridea-theme-fog">Fog</a>
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
+            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020  备案号: 鄂ICP备...号
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+    </div>
+
+
+    <script src="https://asduxb43.github.io//media/js/wordshow.js"></script>
+    
     <!--------------- 左侧菜单栏👆 ------------------------>
 
     <!----------------- 顶部菜单栏👇 ------------------------>
@@ -141,7 +282,7 @@
     
     
     <script>
-        let searchChoice = false
+        let searchChoice = true
     </script>
     
     <script>let postsnum = 0;</script>
@@ -174,6 +315,8 @@
         var icondict = new Array();
     </script>
     
+        
+    
     <!----------根据自定义配置设置图标信息👆---------->
 </body>
 
@@ -191,7 +334,7 @@
     get();
 
     function get() {
-        var t = JSON.parse('');
+        var t = JSON.parse('[]');
         talkindex = t.length - 1;
         for (var i = 0; i <= t.length - 1; i++) {
             var d = {};
@@ -382,13 +525,13 @@
                 shareInit();
             if (donateChoice)
                 donateInit();
-            if ("" == "default"&&!commentsHide) {
+            if ("default" == "default"&&!commentsHide) {
                 $("#comment").hide()
                 commentsHide = true
             }
             lazyload();
             codeinit();
-            if ("" == "twikoo") {
+            if ("default" == "twikoo") {
                 //twikoo头像更换
                 setTimeout(replaceAvatar, 3000);
                 setTimeout(replaceAvatar, 8000); //部分博主站点速度加载过慢，再添加一个延迟
@@ -688,7 +831,12 @@ menulist.eq(i).show();
         
         
         
+          <li><a data-pjax href="https://asduxb43.github.io//bber">哔哔</a></li>
           
+          
+        <li><a data-pjax href="https://asduxb43.github.io//friends">友链</a></li>
+
+        
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -728,12 +876,145 @@ menulist.eq(i).show();
 
                 <!-- ----------------左侧菜单栏html 👇-------------------------------------->
                 
-                    <div>
-                        <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 topindex">
+                <div>
+                    <div id="tab1" class="tab">
+                        <div class="bars">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="close"></div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                        <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
                             <link rel="stylesheet" href="https://asduxb43.github.io//media/css/font-awesome.css">
 
-                        <div>
-                        <div class="pcpagi">
+    <div style="display: none;">
+        
+            
+                <span name="plfeature">https://asduxb43.github.io//post-images/hello-gridea.png</span>
+                
+            <span name="pltitle">Hello Gridea</span>
+            <span name="pllink">https://asduxb43.github.io/post/hello-gridea/</span>
+            <span name="pldate">2018-12-12</span>
+            <span name="plstats">2 min read</span>
+            
+                <span name="pltag" alt="Hello Gridea">Gridea</span>
+                <span name="pltaglink" alt="Hello Gridea">https://asduxb43.github.io/tag/czmwAEWQe/</span>
+            
+        
+    </div>
+
+    
+    <div id="post-container" class="eleg-allpostscontainer">
+        <div v-for="post in postinfo" class="eleg-posts">
+            <div v-if="post.elegcontainer=='eleg-postcontainer-left'">
+                    <div :class="post.elegcontainer">
+                        <img :src="post.feature" alt="" :class="post.imgclass">
+                        
+                        <img class="eleg-swordsmen-left" src="https://asduxb43.github.io//media/images/swordsmenleft.webp" alt="">
+                        
+                        <div class="eleg-info">
+                            <span class="eleg-title">{{post.title}}</span>
+                            <div style="margin-top:15px;">
+                                <span class="postdate eleg-date"><i class="fa fa-calendar"></i>{{post.date}}</span>
+                                <span class="poststatus postdate eleg-stats"><i class="fa fa-clock-o"></i> {{post.stats}}</span>
+                            </div>
+                            <div style="margin-top:50px">
+                                <a :href="post.link" class="eleg-btn" data-pjax>阅读全文</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='eleg-tags'>
+                        <div v-for="tag in post.tags">
+                            <div class="posttag">
+                                <a data-pjax href="" class="postlink eleg-postlink">
+                                    <i class="fa fa-tag"></i>{{tag}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div v-else>
+                    <div :class="post.elegcontainer">
+                        <div class="eleg-info">
+                            <span class="eleg-title">{{post.title}}</span>
+                            <div style="margin-top:15px;">
+                                <span class="postdate eleg-date"><i class="fa fa-calendar"></i>{{post.date}}</span>
+                                <span class="poststatus postdate eleg-stats"><i class="fa fa-clock-o"></i> {{post.stats}}</span>
+                            </div>
+                            <div style="margin-top:50px">
+                                <a :href="post.link" class="eleg-btn" data-pjax>阅读全文</a>
+                            </div>
+                        </div>
+                        
+                        <img class="eleg-swordsmen" src="https://asduxb43.github.io//media/images/swordsmen.webp" alt="">
+                        
+                        <img :src="post.feature" alt="" :class="post.imgclass">
+                    </div>
+                    <div class='eleg-tags'>
+                        <div v-for="tag in post.tags">
+                            <div class="posttag">
+                                <a data-pjax href="" class="postlink eleg-postlink">
+                                    <i class="fa fa-tag"></i>{{tag}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+    var app2 = new Vue({
+      el: '#post-container',
+      mounted:function(){
+        this.getpostInfo();
+      },
+      methods:{
+         getpostInfo:function(){
+             var plflist = $("span[name='plfeature']");
+             var pltlist = $("span[name='pltitle']");
+             var plllist = $("span[name='pllink']");
+             var pldlist = $("span[name='pldate']");
+             var plslist = $("span[name='plstats']");
+             var pltaglist = $("span[name='pltag']");
+             for(var i=0;i<this.pagesize&&i<plflist.length;i++){
+                 var d = {};
+                 var tags = []
+                 d["feature"] = plflist.eq(i).html();
+                 d["title"] = pltlist.eq(i).html();
+                 d["link"] = plllist.eq(i).html();
+                 d["date"] = pldlist.eq(i).html();
+                 d['stats'] = plslist.eq(i).html();
+                 for(var j=0;j<pltaglist.length;j++){
+                     if(pltaglist.eq(j).attr('alt')==d['title'])
+                        tags.push(pltaglist.eq(j).html())
+                 }
+                 d["tags"] = tags;
+                 if(i%2==0)
+                 {
+                     d['elegcontainer'] = 'eleg-postcontainer-left';
+                     d['imgclass'] = 'eleg-img-left'
+                 }
+                 else{
+                    d['elegcontainer'] = 'eleg-postcontainer-right';
+                    d['imgclass'] = 'eleg-img-right' 
+                 }
+                 this.postinfo.push(d);
+             }
+         }
+      },
+      data: {
+        pagesize: "10",
+        postinfo:[],
+      }
+    })
+    </script>
+
+                            <div>
+                                <div class="pcpagi">
     <div class="pagi">
         <ul>
             
@@ -783,12 +1064,14 @@ menulist.eq(i).show();
         page2.innerHTML = nextnum - 1;
     }
 </script>
-                        <div style="padding-bottom:10%"></div>
+                                <div style="padding-bottom:10%"></div>
+                            </div>
                         </div>
-                        
-                        </div>
-                        <div class="col-xs-6"></div>
-                    </div>
+                        <div class="col-lg-2"></div>
+                </div>
+                <!-- ----------------左侧菜单栏html 👆-------------------------------------->
+                
+                <!------------------ 顶部菜单栏html👇--------->
                 
                 <!------------------ 顶部菜单栏html👆--------->
             </div>
@@ -797,10 +1080,10 @@ menulist.eq(i).show();
         <div id="bg">
         </div>
         <!------- 背景图加载方式👇----- -->
-        <div id="bgchoice" style="display: none">
+        <div id="bgchoice" style="display: none">default
                     </div>
                     
-                    <div id="bgurl" style="display:none"></div>
+                    <div id="bgurl" style="display:none">/media/images/bgimg.png</div>
                        
         </div>
         <!------- 背景图加载方式👆 --------------->
@@ -817,11 +1100,21 @@ menulist.eq(i).show();
 </html>
 <!-------------------- live2d功能👇 --------------------------->
 
+<script type="text/javascript">
+    var message_Path = '/live2d/'
+    var home_Path = document.getElementById("domainname").innerHTML + "/"; //此处修改为你的域名，必须带斜杠
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/live2d.js"></script>
+<script type="text/javascript" src="https://asduxb43.github.io//media/live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "https://asduxb43.github.io//media/live2d/assets/tororo.model.json");
+</script>
+
 <!-------------------- live2d功能👆--------------------------->
 
 <!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 <script>
-    var bgchoice = ""
+    var bgchoice = "default"
     var bg = $('#bg');
     var bgurl = document.getElementById("bgurl").innerHTML;
     if (bgchoice == 'default')
@@ -838,3 +1131,5 @@ menulist.eq(i).show();
 </script>
 <!------------ 加载全局背景图功能👆（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 
+
+<script src="https://asduxb43.github.io//media/js/index.js"></script>
