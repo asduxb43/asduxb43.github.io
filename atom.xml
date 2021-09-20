@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://gitee.com/asduxb43/weishuang.github.io/</id>
+    <id>https://asduxb43.github.io/</id>
     <title>Weishuang</title>
-    <updated>2021-09-20T07:12:04.844Z</updated>
+    <updated>2021-09-20T07:30:53.351Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://gitee.com/asduxb43/weishuang.github.io/"/>
-    <link rel="self" href="https://gitee.com/asduxb43/weishuang.github.io/atom.xml"/>
+    <link rel="alternate" href="https://asduxb43.github.io/"/>
+    <link rel="self" href="https://asduxb43.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>https://gitee.com/asduxb43/weishuang.github.io/images/avatar.png</logo>
-    <icon>https://gitee.com/asduxb43/weishuang.github.io/favicon.ico</icon>
+    <logo>https://asduxb43.github.io/images/avatar.png</logo>
+    <icon>https://asduxb43.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Weishuang</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://gitee.com/asduxb43/weishuang.github.io/post/hello-gridea/</id>
-        <link href="https://gitee.com/asduxb43/weishuang.github.io/post/hello-gridea/">
+        <id>https://asduxb43.github.io/post/hello-gridea/</id>
+        <link href="https://asduxb43.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
