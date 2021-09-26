@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://asduxb43.github.io/</id>
     <title>asduxb43</title>
-    <updated>2021-09-20T11:16:47.659Z</updated>
+    <updated>2021-09-26T14:25:45.528Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://asduxb43.github.io/"/>
     <link rel="self" href="https://asduxb43.github.io/atom.xml"/>
@@ -11,14 +11,23 @@
     <icon>https://asduxb43.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, asduxb43</rights>
     <entry>
+        <title type="html"><![CDATA[firefox]]></title>
+        <id>https://asduxb43.github.io/post/firefox/</id>
+        <link href="https://asduxb43.github.io/post/firefox/">
+        </link>
+        <updated>2021-09-26T14:25:03.000Z</updated>
+        <content type="html"><![CDATA[<p>插件合集</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Ad规则]]></title>
         <id>https://asduxb43.github.io/post/ad-gui-ze/</id>
         <link href="https://asduxb43.github.io/post/ad-gui-ze/">
         </link>
         <updated>2021-09-20T11:05:55.000Z</updated>
-        <content type="html"><![CDATA[<p>Easylist China  https://easylist-downloads.adblockplus.org/easylistchina.txt<br>
-Anti-AD https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt<br>
-AdFilters https://cdn.jsdelivr.net/gh/o0HalfLife0o/list/ad3.txt</p>
+        <content type="html"><![CDATA[<p>Easylist China  (https://easylist-downloads.adblockplus.org/easylistchina.txt)</p>
+<p>Anti-AD (https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt)</p>
+<p>AdFilters (https://cdn.jsdelivr.net/gh/o0HalfLife0o/list/ad3.txt)</p>
 ]]></content>
     </entry>
     <entry>
