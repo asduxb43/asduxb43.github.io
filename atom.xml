@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://asduxb43.github.io/</id>
     <title>asduxb43</title>
-    <updated>2021-10-18T14:50:13.633Z</updated>
+    <updated>2021-10-20T14:52:05.718Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://asduxb43.github.io/"/>
     <link rel="self" href="https://asduxb43.github.io/atom.xml"/>
@@ -16,16 +16,24 @@
         <link href="https://asduxb43.github.io/post/python-xue-xi-zhi-lei-shu-xing-lei-fang-fa-shi-li-shu-xing-shi-li-fang-fa-jing-tai-fang-fa/">
         </link>
         <updated>2021-10-18T13:03:23.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>类属性、实例属性</strong><br>
---实例属性属于对象,通过对象来访问<br>
---类属性属于类，通过类来访问<img src="https://asduxb43.github.io//post-images/1634563632166.png" alt="" loading="lazy"><br>
-<strong>类方法、实例方法和静态方法</strong><br>
---类方法、实例方法和静态方法在内存中都归属于类，区别在于调用方式的不同<br>
---1.实例方法：由对象调用；至少一个self参数；执行实例方法时，自动将调用该方法的对象赋值给self<br>
---2.类方法：由类调用；至少一个cls参数；执行类方法时，自动将调用该方法的值给cls<br>
---3.静态方法：由类调用；无默认参数<br>
-<img src="https://asduxb43.github.io//post-images/1634567899842.png" alt="" loading="lazy"><br>
---4.实例对象可以调用类方法、实例方法和静态方法；类对象可以调用类方法静态方法</p>
+        <content type="html"><![CDATA[<hr>
+<p><strong>类属性、实例属性</strong></p>
+<ul>
+<li>实例属性属于对象,通过对象来访问</li>
+<li>类属性属于类，通过类来访问</li>
+<li><img src="https://asduxb43.github.io//post-images/1634563632166.png" alt="" loading="lazy"></li>
+</ul>
+<hr>
+<p><strong>类方法、实例方法和静态方法</strong></p>
+<ul>
+<li>类方法、实例方法和静态方法在内存中都归属于类，区别在于调用方式的不同</li>
+</ul>
+<ol>
+<li>实例方法：由对象调用；至少一个self参数；执行实例方法时，自动将调用该方法的对象赋值给self</li>
+<li>类方法：由类调用；至少一个cls参数；执行类方法时，自动将调用该方法的值给cls</li>
+<li>静态方法：由类调用；无默认参数 <img src="https://asduxb43.github.io//post-images/1634567899842.png" alt="" loading="lazy"></li>
+<li>实例对象可以调用类方法、实例方法和静态方法；类对象可以调用类方法静态方法</li>
+</ol>
 ]]></content>
     </entry>
     <entry>
