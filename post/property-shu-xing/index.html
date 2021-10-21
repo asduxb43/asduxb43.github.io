@@ -2,18 +2,24 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>firefox | asduxb43</title>
+<title>property属性 | asduxb43</title>
 <link rel="shortcut icon" href="https://asduxb43.github.io//favicon.ico?v=1634815945708">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://asduxb43.github.io//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="firefox | asduxb43 - Atom Feed" href="https://asduxb43.github.io//atom.xml">
+<link rel="alternate" type="application/atom+xml" title="property属性 | asduxb43 - Atom Feed" href="https://asduxb43.github.io//atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="插件合集
+    <meta name="description" content="
 
-" />
+什么是property属性？
+
+一种用起来像是使用的实例属性一样的特殊属性，可以对应于某个方法
+需要注意的点
+
+定义时，在实例方法的基础上添加@property装饰器；并且仅有一个self参数
+调用时，无需括号方法:foo_obj.fu..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -76,26 +82,81 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              firefox
+              property属性
             </h2>
             <div class="post-info">
               <span>
-                2021-09-26
+                2021-10-21
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>插件合集<br>
-<img src="https://asduxb43.github.io//post-images/1632742088898.jpg" alt="" loading="lazy"></p>
+                <ol>
+<li>
+<h2 id="什么是property属性">什么是property属性？</h2>
+<ul>
+<li>一种用起来像是使用的实例属性一样的特殊属性，可以对应于某个方法<img src="https://asduxb43.github.io//post-images/1634812160384.png" alt="" loading="lazy"></li>
+<li>需要注意的点
+<ul>
+<li>定义时，在实例方法的基础上添加@property装饰器；并且仅有一个self参数</li>
+<li>调用时，无需括号<pre><code>方法:foo_obj.func():
+property属性:foo_obj.prop
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="property属性的两种方式">property属性的两种方式</h2>
+<ul>
+<li>装饰器 即方法上应用装饰器</li>
+<li>类属性 即在类中定义值为property对象的类属性</li>
+</ul>
+<h3 id="21装饰器方式">2.1装饰器方式</h3>
+<ul>
+<li>经典类 具有一种装饰器<img src="https://asduxb43.github.io//post-images/1634814799065.png" alt="" loading="lazy"></li>
+<li>新式类 具有三种装饰器<img src="https://asduxb43.github.io//post-images/1634814805306.png" alt="" loading="lazy"><br>
+<strong>注意:</strong></li>
+</ul>
+<ol>
+<li>经典类中的属性只有一种访问方式，其对应被 @property 修饰的方法</li>
+<li>新式类中的属性有三种访问方式，并分别对应了三个被@property、@方法名.setter、@方法名.deleter修饰的方法</li>
+<li>由于新式类中具有三种访问方式，我们可以根据它们几个属性的访问特点，分别将三个方法定义为对同一个属性：获取、修改、删除</li>
+</ol>
+<h3 id="类属性方式创建值为property对象的类属性">类属性方式，创建值为property对象的类属性</h3>
+<ul>
+<li>当使用类属性的方式创建property属性时，经典类与新式类无区别<br>
+property方法中有四个参数</li>
+<li>第一个参数是方法名，调用 对象.属性 时自动触发执行方法</li>
+<li>第二个参数是方法名，调用 对象.属性 ＝ XXX 时自动触发执行方法</li>
+<li>第三个参数是方法名，调用 del 对象.属性 时自动触发执行方法</li>
+<li>第四个参数是字符串，调用 对象.属性._<em>doc</em>_，此参数是该属性的描述信息<img src="https://asduxb43.github.io//post-images/1634815851457.png" alt="" loading="lazy"></li>
+</ul>
+</li>
+</ol>
 
               </div>
               <div class="toc-container">
-                
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AFproperty%E5%B1%9E%E6%80%A7">什么是property属性？</a></li>
+<li><a href="#property%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F">property属性的两种方式</a>
+<ul>
+<li><a href="#21%E8%A3%85%E9%A5%B0%E5%99%A8%E6%96%B9%E5%BC%8F">2.1装饰器方式</a></li>
+<li><a href="#%E7%B1%BB%E5%B1%9E%E6%80%A7%E6%96%B9%E5%BC%8F%E5%88%9B%E5%BB%BA%E5%80%BC%E4%B8%BAproperty%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%B1%BB%E5%B1%9E%E6%80%A7">类属性方式，创建值为property对象的类属性</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
               </div>
             </div>
           </article>
@@ -104,9 +165,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://asduxb43.github.io/post/ad-gui-ze/">
+            <a href="https://asduxb43.github.io/post/python-xue-xi-zhi-lei-shu-xing-lei-fang-fa-shi-li-shu-xing-shi-li-fang-fa-jing-tai-fang-fa/">
               <h3 class="post-title">
-                Ad规则
+                python学习之类属性、类方法、实例属性、实例方法、静态方法
               </h3>
             </a>
           </div>
