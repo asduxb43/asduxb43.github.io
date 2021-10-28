@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | asduxb43</title>
+<title>latex_命令行写作 | asduxb43</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,7 +18,16 @@
 
 
 
-    <meta name="description" content="温故而知新">
+    <meta name="description" content="使用命令行编写latex文档
+
+
+使用windows+R 打开命令提示符 输入以下命令：
+cd \
+mkdir latex_text
+cd latex_text
+notepad text.tex  # 新建text.tex文件进入编译
+# ..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -88,12 +97,89 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">latex_命令行写作</h2>
+            <div class="post-date">2021-10-28</div>
             
-              <a class="tag" href="https://asduxb43.github.io/tag/czmwAEWQe/">Gridea</a>
+            <div class="post-content" v-pre>
+              <h2 id="使用命令行编写latex文档">使用命令行编写latex文档</h2>
+<ol>
+<li>
+<p>使用windows+R 打开命令提示符 输入以下命令：</p>
+<pre><code>cd \
+mkdir latex_text
+cd latex_text
+notepad text.tex  # 新建text.tex文件进入编译
+# 编译内容为
+	\document{article}
+
+	\begin{document}
+	Hello \Latex!
+
+	\end{document}
+# 编辑好tex文件之后保存退出
+</code></pre>
+</li>
+<li>
+<p>编译以及转换</p>
+<ul>
+<li>使用latex编译并输出pdf，输入以下命令：<pre><code>latex text.tex
+# 该命令会生成text.aux，text.dvi，text.log文件
+dvipdfmx text.dvi
+# 该命令会将dvi文件转换为pdf文件(注意:dvi文件不会删除)
+</code></pre>
+</li>
+<li>使用xelatex编译并输出，输入以下命令：<pre><code>xelatex text.tex
+# 生成text.aux，text.log，text.pdf等文件
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>使用<code>text.pdf</code>命令直接查看pdf文件</p>
+</li>
+<li>
+<p>使用批处理文件操作将编译操作简化</p>
+<ul>
+<li>使用latex编译
+<ul>
+<li>新建文本文件，将文件的后缀名改为bat</li>
+<li>使用记事本编辑输入以下命令：<pre><code>latex text.tex
+dvipdfmx text.dvi
+del *.dvi *.log *.aux 
+pause
+</code></pre>
+</li>
+</ul>
+</li>
+<li>使用xelatex编译</li>
+<li>同latex新建文件</li>
+<li>输入以下命令：<pre><code>xelatex text.tex
+del *.dvi *.log *.aux 
+pause
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+
+            </div>
             
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://asduxb43.github.io/post/property-shu-xing/">
+                  <h3 class="post-title">
+                    property属性
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
           </div>
+
         </div>
       </div>
     </div>

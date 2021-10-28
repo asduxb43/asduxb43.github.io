@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://asduxb43.github.io/</id>
     <title>asduxb43</title>
-    <updated>2021-10-28T05:52:03.722Z</updated>
+    <updated>2021-10-28T07:22:50.441Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://asduxb43.github.io/"/>
     <link rel="self" href="https://asduxb43.github.io/atom.xml"/>
@@ -10,6 +10,74 @@
     <logo>https://asduxb43.github.io/images/avatar.png</logo>
     <icon>https://asduxb43.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, asduxb43</rights>
+    <entry>
+        <title type="html"><![CDATA[latex_命令行写作]]></title>
+        <id>https://asduxb43.github.io/post/latex_-ming-ling-xing-xie-zuo/</id>
+        <link href="https://asduxb43.github.io/post/latex_-ming-ling-xing-xie-zuo/">
+        </link>
+        <updated>2021-10-28T07:21:42.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="使用命令行编写latex文档">使用命令行编写latex文档</h2>
+<ol>
+<li>
+<p>使用windows+R 打开命令提示符 输入以下命令：</p>
+<pre><code>cd \
+mkdir latex_text
+cd latex_text
+notepad text.tex  # 新建text.tex文件进入编译
+# 编译内容为
+	\document{article}
+
+	\begin{document}
+	Hello \Latex!
+
+	\end{document}
+# 编辑好tex文件之后保存退出
+</code></pre>
+</li>
+<li>
+<p>编译以及转换</p>
+<ul>
+<li>使用latex编译并输出pdf，输入以下命令：<pre><code>latex text.tex
+# 该命令会生成text.aux，text.dvi，text.log文件
+dvipdfmx text.dvi
+# 该命令会将dvi文件转换为pdf文件(注意:dvi文件不会删除)
+</code></pre>
+</li>
+<li>使用xelatex编译并输出，输入以下命令：<pre><code>xelatex text.tex
+# 生成text.aux，text.log，text.pdf等文件
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>使用<code>text.pdf</code>命令直接查看pdf文件</p>
+</li>
+<li>
+<p>使用批处理文件操作将编译操作简化</p>
+<ul>
+<li>使用latex编译
+<ul>
+<li>新建文本文件，将文件的后缀名改为bat</li>
+<li>使用记事本编辑输入以下命令：<pre><code>latex text.tex
+dvipdfmx text.dvi
+del *.dvi *.log *.aux 
+pause
+</code></pre>
+</li>
+</ul>
+</li>
+<li>使用xelatex编译</li>
+<li>同latex新建文件</li>
+<li>输入以下命令：<pre><code>xelatex text.tex
+del *.dvi *.log *.aux 
+pause
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[property属性]]></title>
         <id>https://asduxb43.github.io/post/property-shu-xing/</id>
