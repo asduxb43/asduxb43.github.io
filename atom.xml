@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://asduxb43.github.io/</id>
     <title>asduxb43</title>
-    <updated>2021-10-28T12:53:38.693Z</updated>
+    <updated>2021-10-28T12:57:08.146Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://asduxb43.github.io/"/>
     <link rel="self" href="https://asduxb43.github.io/atom.xml"/>
@@ -162,7 +162,8 @@
         <link href="https://asduxb43.github.io/post/latex_-ming-ling-xing-xie-zuo/">
         </link>
         <updated>2021-10-28T07:21:42.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="使用命令行编写latex文档"><em>使用命令行编写latex文档</em></h2>
+        <content type="html"><![CDATA[<p>latex的安装可以参考这篇文章<a href="https://zhuanlan.zhihu.com/p/41855480">最新TeXLive 环境的安装与配置</a>，教程可以参考这个<a href="https://www.bilibili.com/video/BV1Sb411s7cq?p=6&amp;spm_id_from=pageDriver">LaTeX中文学习教程</a></p>
+<h2 id="使用命令行编写latex文档"><em>使用命令行编写latex文档</em></h2>
 <ol>
 <li>
 <p>使用windows+R 打开命令提示符 输入以下命令：</p>
