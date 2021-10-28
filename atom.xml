@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://asduxb43.github.io/</id>
     <title>asduxb43</title>
-    <updated>2021-10-28T12:48:43.564Z</updated>
+    <updated>2021-10-28T12:52:09.538Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://asduxb43.github.io/"/>
     <link rel="self" href="https://asduxb43.github.io/atom.xml"/>
@@ -283,20 +283,26 @@ property方法中有四个参数</li>
         </link>
         <updated>2021-10-18T13:03:23.000Z</updated>
         <content type="html"><![CDATA[<hr>
-<p><strong>类属性、实例属性</strong></p>
+<ol>
+<li><strong>类属性、实例属性</strong>
 <ul>
 <li>实例属性属于对象,通过对象来访问</li>
 <li>类属性属于类，通过类来访问</li>
 <li><img src="https://asduxb43.github.io//post-images/1634563632166.png" alt="" loading="lazy"></li>
 </ul>
+</li>
+</ol>
 <hr>
-<p><strong>类方法、实例方法和静态方法</strong><br>
-类方法、实例方法和静态方法在内存中都归属于类，区别在于调用方式的不同</p>
-<ol>
+<ol start="2">
+<li><strong>类方法、实例方法和静态方法</strong><br>
+类方法、实例方法和静态方法在内存中都归属于类，区别在于调用方式的不同
+<ul>
 <li>实例方法：由对象调用；至少一个self参数；执行实例方法时，自动将调用该方法的对象赋值给self</li>
 <li>类方法：由类调用；至少一个cls参数；执行类方法时，自动将调用该方法的值给cls</li>
 <li>静态方法：由类调用；无默认参数 <img src="https://asduxb43.github.io//post-images/1634567899842.png" alt="" loading="lazy"></li>
 <li>实例对象可以调用类方法、实例方法和静态方法；类对象可以调用类方法静态方法</li>
+</ul>
+</li>
 </ol>
 ]]></content>
     </entry>
