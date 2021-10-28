@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://asduxb43.github.io/</id>
     <title>asduxb43</title>
-    <updated>2021-10-28T07:46:01.819Z</updated>
+    <updated>2021-10-28T09:09:42.281Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://asduxb43.github.io/"/>
     <link rel="self" href="https://asduxb43.github.io/atom.xml"/>
@@ -10,6 +10,72 @@
     <logo>https://asduxb43.github.io/images/avatar.png</logo>
     <icon>https://asduxb43.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, asduxb43</rights>
+    <entry>
+        <title type="html"><![CDATA[latex_中文写作]]></title>
+        <id>https://asduxb43.github.io/post/latex_-zhong-wen-xie-zuo/</id>
+        <link href="https://asduxb43.github.io/post/latex_-zhong-wen-xie-zuo/">
+        </link>
+        <updated>2021-10-28T07:46:42.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="中文写作">中文写作</h2>
+<ol>
+<li>核心 需要完成的设置
+<ul>
+<li>latex文档使用utf-8编码</li>
+<li>在latex文档中导入了ctex宏包</li>
+<li>使用xelatex编译</li>
+</ul>
+</li>
+<li>使用命令行工具写作
+<ul>
+<li>代码参见<a href="https://asduxb43.github.io/post/latex_-ming-ling-xing-xie-zuo/">latex_命令行写作</a></li>
+<li>注意:
+<ul>
+<li>保存latex文档时选择utf-8编码  <!-- <img src="/C:/Users/27803/Desktop/blog_images/屏幕截图 2021-10-28 154248.png" alt= "" title= "" wideth="50">-->  <img src="file://C:/Users/27803/Documents/Gridea/post-images/1635411538452.png" alt="" title="" width="500">
+</li>
+<li>使用xelatex编译命令   <code>xelatex text.tex</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>使用textstudio写作
+<ul>
+<li>
+<p>代码如下</p>
+<pre><code>  % 导言区 
+  \documentclass{article} % book, report, letter
+  \usepackage{ctex}
+
+  \title{My first document}
+  \author{作者}
+  \date{\today}
+
+  % 正文区（文稿区）
+  \begin{document}
+  \maketitle
+  Hello World!
+  	
+  % here is my formula
+  Let $f(x)$ be defined by formula
+  % $之间可以写行内公式
+  $$f(x)=3x^2+x-1$$ which is a polynomial of
+  % $$之间可以写行间公式
+  degree 2.
+  \end{document}
+</code></pre>
+</li>
+<li>
+<p>需要注意的是:需要配置textstudio</p>
+<ul>
+<li>修改语言：点开工具栏option、依次点击&quot;Configure Textstudio&quot; -&gt; &quot;general&quot; -&gt; &quot;Language&quot; 下拉菜单中选择&quot;zh_CN(Chinese)&quot;,确认即可</li>
+<li>配置编译器：同样打开工具栏选项,依次点击&quot;设置Textstudio&quot; -&gt; &quot;构建&quot; -&gt; &quot;默认编译器&quot;,在下拉菜单中选择xelatex，确认即可<br>
+<img src="file://C:/Users/27803/Documents/Gridea/post-images/1635411538452.png" alt="" title="" width="500"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[latex_命令行写作]]></title>
         <id>https://asduxb43.github.io/post/latex_-ming-ling-xing-xie-zuo/</id>
