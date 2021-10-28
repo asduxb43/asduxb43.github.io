@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>latex_中文写作 | asduxb43</title>
+<title>latex字体设置 | asduxb43</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,21 +18,15 @@
 
 
 
-    <meta name="description" content="中文写作
+    <meta name="description" content="latex字体设置
 
-核心 需要完成的设置
+代码示例：
 
-latex文档使用utf-8编码
-在latex文档中导入了ctex宏包
-使用xelatex编译
-
-
-使用命令行工具写作
-
-代码参见latex_命令行写作
-注意:
-
-保存latex文档时选择utf-8编码 ..." />
+\documentclass[12pt]{article}
+% [10pt] 设置文档类参数------normalsize类字体大小
+% 一般只有10,11,12 
+% 导言区
+\usepackage{..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -104,77 +98,91 @@ latex文档使用utf-8编码
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">latex_中文写作</h2>
+            <h2 class="post-title">latex字体设置</h2>
             <div class="post-date">2021-10-28</div>
             
             <div class="post-content" v-pre>
-              <h2 id="中文写作"><em>中文写作</em></h2>
+              <h2 id="latex字体设置"><em>latex字体设置</em></h2>
 <ol>
-<li><em>核心 需要完成的设置</em>
-<ul>
-<li>latex文档使用utf-8编码</li>
-<li>在latex文档中导入了ctex宏包</li>
-<li>使用xelatex编译</li>
-</ul>
-</li>
-<li><em>使用命令行工具写作</em>
-<ul>
-<li>代码参见<a href="https://asduxb43.github.io/post/latex_-ming-ling-xing-xie-zuo/">latex_命令行写作</a></li>
-<li>注意:
-<ul>
-<li>保存latex文档时选择utf-8编码  <!-- <img src="/C:/Users/27803/Desktop/blog_images/屏幕截图 2021-10-28 154248.png" alt= "" title= "" wideth="50">-->  <img src="file://C:/Users/27803/Documents/Gridea/post-images/1635411538452.png" alt="" title="" width="500">
-</li>
-<li>使用xelatex编译命令   <code>xelatex text.tex</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><em>使用textstudio写作</em>
-<ul>
-<li>
-<p>代码如下</p>
-<pre><code>  % 导言区 
-  \documentclass{article} % book, report, letter
-  \usepackage{ctex}
-
-  \title{My first document}
-  \author{作者}
-  \date{\today}
-
-  % 正文区（文稿区）
-  \begin{document}
-  \maketitle
-  Hello World!
-  	
-  % here is my formula
-  Let $f(x)$ be defined by formula
-  % $之间可以写行内公式
-  $$f(x)=3x^2+x-1$$ which is a polynomial of
-  % $$之间可以写行间公式
-  degree 2.
-  \end{document}
-</code></pre>
-</li>
-<li>
-<p>需要注意的是:需要配置textstudio</p>
-<ul>
-<li>修改语言：点开工具栏option、依次点击&quot;Configure Textstudio&quot; -&gt; &quot;general&quot; -&gt; &quot;Language&quot; 下拉菜单中选择&quot;zh_CN(Chinese)&quot;,确认即可</li>
-<li>配置编译器：同样打开工具栏选项,依次点击&quot;设置Textstudio&quot; -&gt; &quot;构建&quot; -&gt; &quot;默认编译器&quot;,在下拉菜单中选择xelatex，确认即可<br>
-<img src="file://C:/Users/27803/Documents/Gridea/post-images/1635411538452.png" alt="" title="" width="500"></li>
-</ul>
-</li>
-</ul>
-</li>
+<li>代码示例：</li>
 </ol>
+<pre><code>\documentclass[12pt]{article}
+% [10pt] 设置文档类参数------normalsize类字体大小
+% 一般只有10,11,12 
+% 导言区
+\usepackage{ctex}
+\newcommand{\myfont}{\textit{\textsf{Fancy Text}}}
+% 正文区（文稿区）
+\begin{document}
+	% 字体族设置（罗马字体、无衬线字体、打字机字体）
+	\textrm{Roman Family}   \textsf{Sans Serif Family}    \texttt{Typewriter Family}
+	% 既可以使用字体命令作用于命令的参数
+	% 也可以使用字体声明作用于后续的文本
+	% 也可以用大括号对文本进行分组，限定字体声明的限定范围
+	{\rmfamily Roman Family}  {\sffamily Sans Serif Family}      {\ttfamily Typewriter Family}
+	
+	{\sffamily Last year, I went to the countryside to get my internship, my duty was to be a teacher, teaching the middle school students English. 
+	% 测试文档
+	
+	At first, I was not used to the environment, it was so different from the city I live in, but I didn’t want to give up, so I insisted and got used to the new environment. On the first day of being a teacher, I was a little shy, but the students were kind, they cooperated with me so much, I was so moved. }
+	% 测试文档
+
+	{\rmfamily
+	In the coming days, I became more and more confident, I learned to be a good teacher, got along with the students, we became friends soon. }
+	% 测试文档
+	
+	{\ttfamily
+	When I came home, the students were sad, I also felt sad. I am so thankful for the internship experience, it fosters me with the ability to get used to the new environment.}
+	% 测试文档
+	
+	% 字体系列设置(粗细、宽度)
+	\textmd{Medium Series}  \textbf{Boldface Series}
+	
+	{\mdseries Medium Series}  {\bfseries Boldface Series}
+	
+	% 字体形状(直立、斜体、伪斜体、小型大写)
+	\textup{Upright Shape}   \textit{Italic Shape}
+	\textsl{Slanted Shape}    \textsc{Small Cap Shape}
+	
+	{\upshape Upright Shape}   {\itshape Italic Shape}  {\textsl Slanted Shape}
+	{\textsc Small Cap Shape}
+	
+	% 中文字体
+	{\songti 宋体}  \quad{\heiti 黑体}  \quad{\fangsong 仿宋}
+	\quad{\kaishu 楷书}
+	
+	中文字体的\textbf{粗体}与\textit{斜体}
+	% 对于中文，粗体用黑体表示，斜体用楷书表示
+	
+	% 字体大小
+	{\tiny         hello}\\
+	{\scriptsize   hello}\\
+	{\footnotesize hello}\\
+	{\small        hello}\\
+	{\normalsize   hello}\\
+	{\large        hello}\\
+	{\Large        hello}\\
+	{\LARGE        hello}\\
+	{\huge         hello}\\
+	{\Huge         hello}\\
+	% \\换行
+	
+	% 中文字号设置命令
+	\zihao{5} 你好
+	
+	\myfont
+	% 更多命令帮助可以使用texdoc ctex查看帮助
+\end{document} 
+</code></pre>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://asduxb43.github.io/post/latex_-ming-ling-xing-xie-zuo/">
+                <a href="https://asduxb43.github.io/post/latex_-zhong-wen-xie-zuo/">
                   <h3 class="post-title">
-                    latex_命令行写作
+                    latex_中文写作
                   </h3>
                 </a>
               </div>

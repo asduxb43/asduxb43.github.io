@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://asduxb43.github.io/</id>
     <title>asduxb43</title>
-    <updated>2021-10-28T10:34:49.740Z</updated>
+    <updated>2021-10-28T12:48:43.564Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://asduxb43.github.io/"/>
     <link rel="self" href="https://asduxb43.github.io/atom.xml"/>
@@ -11,21 +11,101 @@
     <icon>https://asduxb43.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, asduxb43</rights>
     <entry>
+        <title type="html"><![CDATA[latex字体设置]]></title>
+        <id>https://asduxb43.github.io/post/latex-zi-ti-she-zhi/</id>
+        <link href="https://asduxb43.github.io/post/latex-zi-ti-she-zhi/">
+        </link>
+        <updated>2021-10-28T12:44:43.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="latex字体设置"><em>latex字体设置</em></h2>
+<ol>
+<li>代码示例：</li>
+</ol>
+<pre><code>\documentclass[12pt]{article}
+% [10pt] 设置文档类参数------normalsize类字体大小
+% 一般只有10,11,12 
+% 导言区
+\usepackage{ctex}
+\newcommand{\myfont}{\textit{\textsf{Fancy Text}}}
+% 正文区（文稿区）
+\begin{document}
+	% 字体族设置（罗马字体、无衬线字体、打字机字体）
+	\textrm{Roman Family}   \textsf{Sans Serif Family}    \texttt{Typewriter Family}
+	% 既可以使用字体命令作用于命令的参数
+	% 也可以使用字体声明作用于后续的文本
+	% 也可以用大括号对文本进行分组，限定字体声明的限定范围
+	{\rmfamily Roman Family}  {\sffamily Sans Serif Family}      {\ttfamily Typewriter Family}
+	
+	{\sffamily Last year, I went to the countryside to get my internship, my duty was to be a teacher, teaching the middle school students English. 
+	% 测试文档
+	
+	At first, I was not used to the environment, it was so different from the city I live in, but I didn’t want to give up, so I insisted and got used to the new environment. On the first day of being a teacher, I was a little shy, but the students were kind, they cooperated with me so much, I was so moved. }
+	% 测试文档
+
+	{\rmfamily
+	In the coming days, I became more and more confident, I learned to be a good teacher, got along with the students, we became friends soon. }
+	% 测试文档
+	
+	{\ttfamily
+	When I came home, the students were sad, I also felt sad. I am so thankful for the internship experience, it fosters me with the ability to get used to the new environment.}
+	% 测试文档
+	
+	% 字体系列设置(粗细、宽度)
+	\textmd{Medium Series}  \textbf{Boldface Series}
+	
+	{\mdseries Medium Series}  {\bfseries Boldface Series}
+	
+	% 字体形状(直立、斜体、伪斜体、小型大写)
+	\textup{Upright Shape}   \textit{Italic Shape}
+	\textsl{Slanted Shape}    \textsc{Small Cap Shape}
+	
+	{\upshape Upright Shape}   {\itshape Italic Shape}  {\textsl Slanted Shape}
+	{\textsc Small Cap Shape}
+	
+	% 中文字体
+	{\songti 宋体}  \quad{\heiti 黑体}  \quad{\fangsong 仿宋}
+	\quad{\kaishu 楷书}
+	
+	中文字体的\textbf{粗体}与\textit{斜体}
+	% 对于中文，粗体用黑体表示，斜体用楷书表示
+	
+	% 字体大小
+	{\tiny         hello}\\
+	{\scriptsize   hello}\\
+	{\footnotesize hello}\\
+	{\small        hello}\\
+	{\normalsize   hello}\\
+	{\large        hello}\\
+	{\Large        hello}\\
+	{\LARGE        hello}\\
+	{\huge         hello}\\
+	{\Huge         hello}\\
+	% \\换行
+	
+	% 中文字号设置命令
+	\zihao{5} 你好
+	
+	\myfont
+	% 更多命令帮助可以使用texdoc ctex查看帮助
+\end{document} 
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[latex_中文写作]]></title>
         <id>https://asduxb43.github.io/post/latex_-zhong-wen-xie-zuo/</id>
         <link href="https://asduxb43.github.io/post/latex_-zhong-wen-xie-zuo/">
         </link>
         <updated>2021-10-28T07:46:42.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="中文写作">中文写作</h2>
+        <content type="html"><![CDATA[<h2 id="中文写作"><em>中文写作</em></h2>
 <ol>
-<li>核心 需要完成的设置
+<li><em>核心 需要完成的设置</em>
 <ul>
 <li>latex文档使用utf-8编码</li>
 <li>在latex文档中导入了ctex宏包</li>
 <li>使用xelatex编译</li>
 </ul>
 </li>
-<li>使用命令行工具写作
+<li><em>使用命令行工具写作</em>
 <ul>
 <li>代码参见<a href="https://asduxb43.github.io/post/latex_-ming-ling-xing-xie-zuo/">latex_命令行写作</a></li>
 <li>注意:
@@ -37,7 +117,7 @@
 </li>
 </ul>
 </li>
-<li>使用textstudio写作
+<li><em>使用textstudio写作</em>
 <ul>
 <li>
 <p>代码如下</p>
@@ -82,7 +162,7 @@
         <link href="https://asduxb43.github.io/post/latex_-ming-ling-xing-xie-zuo/">
         </link>
         <updated>2021-10-28T07:21:42.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="使用命令行编写latex文档">使用命令行编写latex文档</h2>
+        <content type="html"><![CDATA[<h2 id="使用命令行编写latex文档"><em>使用命令行编写latex文档</em></h2>
 <ol>
 <li>
 <p>使用windows+R 打开命令提示符 输入以下命令：</p>
@@ -152,7 +232,7 @@ pause
         <updated>2021-10-21T09:58:21.000Z</updated>
         <content type="html"><![CDATA[<ol>
 <li>
-<h2 id="什么是property属性">什么是property属性？</h2>
+<h2 id="什么是property属性"><em>什么是property属性？</em></h2>
 <ul>
 <li>一种用起来像是使用的实例属性一样的特殊属性，可以对应于某个方法<img src="https://asduxb43.github.io//post-images/1634812160384.png" alt="" loading="lazy"></li>
 <li>需要注意的点
@@ -167,7 +247,7 @@ property属性:foo_obj.prop
 </ul>
 </li>
 <li>
-<h2 id="property属性的两种方式">property属性的两种方式</h2>
+<h2 id="property属性的两种方式"><em>property属性的两种方式</em></h2>
 <ul>
 <li>装饰器 即方法上应用装饰器</li>
 <li>类属性 即在类中定义值为property对象的类属性</li>
