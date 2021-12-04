@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://asduxb43.github.io/</id>
     <title>asduxb43</title>
-    <updated>2021-11-15T05:30:29.678Z</updated>
+    <updated>2021-12-04T15:41:01.518Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://asduxb43.github.io/"/>
     <link rel="self" href="https://asduxb43.github.io/atom.xml"/>
@@ -10,6 +10,142 @@
     <logo>https://asduxb43.github.io/images/avatar.png</logo>
     <icon>https://asduxb43.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, asduxb43</rights>
+    <entry>
+        <title type="html"><![CDATA[正则表达式学习笔记]]></title>
+        <id>https://asduxb43.github.io/post/zheng-ze-biao-da-shi-xue-xi-bi-ji/</id>
+        <link href="https://asduxb43.github.io/post/zheng-ze-biao-da-shi-xue-xi-bi-ji/">
+        </link>
+        <updated>2021-12-04T15:39:33.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="正则表达式">| <a href="">正则表达式</a></h1>
+<h2 id="匹配单个字符">匹配单个字符</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字符</th>
+<th style="text-align:left">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">.</td>
+<td style="text-align:left">匹配任意1个字符（除了\n）</td>
+</tr>
+<tr>
+<td style="text-align:center">[ ]</td>
+<td style="text-align:left">匹配[ ]中列举的字符</td>
+</tr>
+<tr>
+<td style="text-align:center">\d</td>
+<td style="text-align:left">匹配数字，即0-9</td>
+</tr>
+<tr>
+<td style="text-align:center">\D</td>
+<td style="text-align:left">匹配非数字，即不是数字</td>
+</tr>
+<tr>
+<td style="text-align:center">\s</td>
+<td style="text-align:left">匹配空白，即 空格，tab键</td>
+</tr>
+<tr>
+<td style="text-align:center">\S</td>
+<td style="text-align:left">匹配非空白</td>
+</tr>
+<tr>
+<td style="text-align:center">\w</td>
+<td style="text-align:left">匹配单词字符，即a-z、A-Z、0-9、_</td>
+</tr>
+<tr>
+<td style="text-align:center">\W</td>
+<td style="text-align:left">匹配非单词字符</td>
+</tr>
+</tbody>
+</table>
+<h2 id="匹配多个字符">匹配多个字符|</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字符</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">*</td>
+<td>匹配前一个字符出现0次或者无限次，即可有可无</td>
+</tr>
+<tr>
+<td style="text-align:center">+</td>
+<td>匹配前一个字符出现1次或者无限次，即至少有1次</td>
+</tr>
+<tr>
+<td style="text-align:center">?</td>
+<td>匹配前一个字符出现1次或者0次，即要么有1次，要么没有</td>
+</tr>
+<tr>
+<td style="text-align:center">{m}</td>
+<td>匹配前一个字符出现m次</td>
+</tr>
+<tr>
+<td style="text-align:center">{m,n}</td>
+<td>匹配前一个字符出现从m到n次</td>
+</tr>
+</tbody>
+</table>
+<h2 id="匹配开头与结尾">匹配开头与结尾</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字符</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">^</td>
+<td>匹配字符串开头</td>
+</tr>
+<tr>
+<td style="text-align:center">$</td>
+<td>匹配字符串结尾</td>
+</tr>
+</tbody>
+</table>
+<h2 id="匹配分组">匹配分组</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字符</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">|</td>
+<td>匹配左右任意一个表达式</td>
+</tr>
+<tr>
+<td style="text-align:center">(ab)</td>
+<td>将括号中字符作为一个分组</td>
+</tr>
+<tr>
+<td style="text-align:center">\num</td>
+<td>引用分组num匹配到的字符串</td>
+</tr>
+<tr>
+<td style="text-align:center">(?P<name>)</td>
+<td>分组起别名</td>
+</tr>
+<tr>
+<td style="text-align:center">(?P=name)</td>
+<td>引用别名为name分组匹配到的字符串</td>
+</tr>
+</tbody>
+</table>
+<h2 id="r的作用">r的作用</h2>
+<p>Python中字符串前面加上 r 表示原生字符串，与大多数编程语言相同，正则表达式里使用&quot;&quot;作为转义字符，这就可能造成反斜杠困扰。假如你需要匹配文本中的字符&quot;&quot;，那么使用编程语言表示的正则表达式里将需要4个反斜杠&quot;\&quot;：前两个和后两个分别用于在编程语言里转义成反斜杠，转换成两个反斜杠后再在正则表达式里转义成一个反斜杠。</p>
+<p>Python里的原生字符串很好地解决了这个问题，有了原生字符串，你再也不用担心是不是漏写了反斜杠，写出来的表达式也更直观。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[latex字体设置]]></title>
         <id>https://asduxb43.github.io/post/latex-zi-ti-she-zhi/</id>
