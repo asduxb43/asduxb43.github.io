@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://asduxb43.github.io/</id>
     <title>asduxb43</title>
-    <updated>2022-01-27T11:40:34.064Z</updated>
+    <updated>2022-02-24T15:06:26.627Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://asduxb43.github.io/"/>
     <link rel="self" href="https://asduxb43.github.io/atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>https://asduxb43.github.io/images/avatar.png</logo>
     <icon>https://asduxb43.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, asduxb43</rights>
+    <entry>
+        <title type="html"><![CDATA[佳词好句积累]]></title>
+        <id>https://asduxb43.github.io/post/jia-ci-hao-ju-ji-lei/</id>
+        <link href="https://asduxb43.github.io/post/jia-ci-hao-ju-ji-lei/">
+        </link>
+        <updated>2022-02-24T15:05:55.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>菜根谭
+<ol>
+<li>纷扰固溺志之场，而枯寂亦槁心之地。固学者当栖心元默，以宁吾真体；亦当适志恬愉，以养吾圆机。</li>
+<li>昨日之非不可留，留之则根烬复萌，而尘情终累乎理趣；今日之是不可执，执之则渣滓未化，而理趣反转为欲根。</li>
+<li>拨开世上尘氛，腹中自无火炎冰兢；消却心中鄙吝，眼前时有月到风来。</li>
+</ol>
+</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[正则表达式学习笔记]]></title>
         <id>https://asduxb43.github.io/post/zheng-ze-biao-da-shi-xue-xi-bi-ji/</id>
