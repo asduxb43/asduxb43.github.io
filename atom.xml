@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://asduxb43.github.io</id>
+    <title>asduxb43&apos;s blogger</title>
+    <updated>2023-07-09T13:15:17.950Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://asduxb43.github.io"/>
+    <link rel="self" href="https://asduxb43.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://asduxb43.github.io/images/avatar.png</logo>
+    <icon>https://asduxb43.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, asduxb43&apos;s blogger</rights>
+    <entry>
+        <title type="html"><![CDATA[Python3：pyinstaller安装及环境配置（将.py打包成.exe)]]></title>
+        <id>https://asduxb43.github.io/post/python3pyinstaller-an-zhuang-ji-huan-jing-pei-zhi-jiang-py-da-bao-cheng-exe/</id>
+        <link href="https://asduxb43.github.io/post/python3pyinstaller-an-zhuang-ji-huan-jing-pei-zhi-jiang-py-da-bao-cheng-exe/">
+        </link>
+        <updated>2023-07-09T12:40:45.000Z</updated>
+        <content type="html"><![CDATA[<p>[Python3：pyinstaller安装及环境配置（将.py打包成.exe）]https://www.ngui.cc/el/1285562.html?action=onClick</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[python实现excel向word传输数据]]></title>
+        <id>https://asduxb43.github.io/post/python-shi-xian-excel-xiang-word-chuan-shu-shu-ju/</id>
+        <link href="https://asduxb43.github.io/post/python-shi-xian-excel-xiang-word-chuan-shu-shu-ju/">
+        </link>
+        <updated>2023-07-09T12:04:59.000Z</updated>
+        <content type="html"><![CDATA[<p>具体参考<a href="https://www.codenong.com/cs105671886/">Python将Excel数据自动填写到Word</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[从Windows备份与还原生成的镜像中提取单个文件]]></title>
+        <id>https://asduxb43.github.io/post/cong-windows-bei-fen-yu-huan-yuan-sheng-cheng-de-jing-xiang-zhong-ti-qu-dan-ge-wen-jian/</id>
+        <link href="https://asduxb43.github.io/post/cong-windows-bei-fen-yu-huan-yuan-sheng-cheng-de-jing-xiang-zhong-ti-qu-dan-ge-wen-jian/">
+        </link>
+        <updated>2023-07-05T01:23:04.000Z</updated>
+        <content type="html"><![CDATA[<p>具体可参考文章<br>
+<a href="https://www.abackup.com/easybackup-tutorials/unpack-windows-backup-file-666.html">从Windows备份中提取单个文件的两个有效方法！</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[批处理学习之四——批处理基本命令]]></title>
+        <id>https://asduxb43.github.io/post/pi-chu-li-xue-xi-zhi-si-pi-chu-li-ji-ben-ming-ling/</id>
+        <link href="https://asduxb43.github.io/post/pi-chu-li-xue-xi-zhi-si-pi-chu-li-ji-ben-ming-ling/">
+        </link>
+        <updated>2022-08-08T07:24:46.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="批处理基本命令">批处理基本命令</h4>
+<ol>
+<li>
+<p>命令格式</p>
+<ul>
+<li>命令 子命令 参数 操作 选项</li>
+<li>net user test test /add</li>
+<li>命令帮助信息查看 /? /help获取详细的帮助信息</li>
+<li>net user /help ,</li>
+</ul>
+</li>
+<li>
+<p>批处理文件参数传递</p>
+<ul>
+<li>.bat文件接收参数使用%num</li>
+<li>net user %1 %2 /add     参数之间用空格分隔</li>
+<li>注释符扩展 rem comment   rem ******</li>
+</ul>
+</li>
+<li>
+<p>命令提示符</p>
+<ul>
+<li>颜色命令 color  color 0a</li>
+<li>标题命令 title  title &quot;hack&quot;</li>
+</ul>
+</li>
+<li>
+<p>时间相关命令</p>
+<ul>
+<li>date
+<ul>
+<li>date /t</li>
+</ul>
+</li>
+<li>time
+<ul>
+<li>time /t</li>
+</ul>
+</li>
+<li>date /t &amp;&amp; time /t</li>
+</ul>
+</li>
+<li>
+<p>启动命令</p>
+<ul>
+<li>strat    /B</li>
+<li>start &quot;my shell&quot;</li>
+</ul>
+</li>
+<li>
+<p>调用其他bat文件</p>
+<ul>
+<li>call 只能给主文件传递参数</li>
+</ul>
+</li>
+<li>
+<p>任务列表查看命令 tasklist该工具显示在本地或远程及其上当前运行的进程</p>
+<ul>
+<li>tasklist /s ip地址 /u 用户名  /p 密码  --查看远程客户端上的任务列表</li>
+<li>tasklist /fi &quot;pid eq 996&quot; /fo csv &gt;test.csv --筛选出pid为996的数据并将之重定向到csv文件</li>
+</ul>
+</li>
+<li>
+<p>任务终止命令</p>
+<ul>
+<li>taskkill /?   --taskkill帮助信息查看</li>
+<li>说明
+<ol>
+<li>只有在应用筛选器的情况下，/IM 切换才能使用通配符 '*'。</li>
+<li>远程进程总是要强行 (/F) 终止。</li>
+<li>当指定远程机器时，不支持 &quot;WINDOWTITLE&quot; 和 &quot;STATUS&quot; 筛选器。</li>
+</ol>
+</li>
+<li>taskkill /im notepad.exe</li>
+<li>taskkill  /pid 3348(具体查看任务管理器中程序对应的pid)</li>
+</ul>
+</li>
+<li>
+<p>文件夹结构查看命令 tree</p>
+<ul>
+<li>tree 路径 /f /a</li>
+</ul>
+</li>
+<li>
+<p>关机/重启命令</p>
+<ul>
+<li>shutdown /i 打开Gui可视化界面，执行远程主机的重启关机操作</li>
+<li>shutdown /l 注销计算机</li>
+<li>shutdown /s 关闭计算机</li>
+<li>shutdown /r 关闭计算机并重新启动</li>
+<li>shutdown /a 终止关闭或重启计算机</li>
+<li>shutdown /p 关闭本地计算机不出现警告</li>
+</ul>
+</li>
+<li>
+<p>计划任务命令at 现已弃用使用schtasks</p>
+<ul>
+<li>at 21:32 &quot;notepad.exe&quot;   到达时间之后程序会启动，但是是隐藏的，只有在任务管理器中才可以看到</li>
+<li>at   查看设置的计划任务</li>
+<li>at 2 /delete  删除2号任务</li>
+<li>at 21:32 /every:M,T,W,Th,F,S,Su  路径  程序(*.exe)</li>
+</ul>
+</li>
+<li>
+<p>环境变量</p>
+</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[批处理学习之三——批处理运算操作]]></title>
+        <id>https://asduxb43.github.io/post/pi-chu-li-xue-xi-zhi-san-pi-chu-li-yun-suan-cao-zuo/</id>
+        <link href="https://asduxb43.github.io/post/pi-chu-li-xue-xi-zhi-san-pi-chu-li-yun-suan-cao-zuo/">
+        </link>
+        <updated>2022-08-08T07:23:51.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="三-批处理运算操作">三、批处理运算操作</h4>
+<ol>
+<li>
+<p>算数运算</p>
+<ul>
+<li>*/%+-</li>
+<li>分组优先级()</li>
+<li>命令模式 set /a 1+2</li>
+<li>文本模式</li>
+</ul>
+</li>
+<li>
+<p>重定向运算(将输出结果运送到下一个命令，可以重定向到某一个文件中)</p>
+<ul>
+<li><code>&gt;</code> 会覆盖原有内容(左边内容会保存到右边区域)</li>
+<li><code>&gt;&gt;</code> 追加(左边内容会追加到右边区域)</li>
+<li>文本文件内容查看 type</li>
+<li><code>&lt;</code> 会覆盖原有内容(右边内容会覆盖到左边区域)</li>
+<li><code>&lt;&lt;</code> 追加(右边内容会追加到左边区域)</li>
+</ul>
+</li>
+<li>
+<p>关系运算</p>
+<ul>
+<li>大于<code>&gt;</code></li>
+<li>小于<code>&lt;</code></li>
+</ul>
+</li>
+<li>
+<p>多命令运算</p>
+<ul>
+<li>&amp;&amp; 类似“与” ，具有短路，第一个命令错误<br>
+不会执行第二个命令（两个符号具有相同的作用，特殊情况下有区别一直执行到失败为止</li>
+<li>|| 类似于“或” 具有断路，第一个命令执行成功，<br>
+就不会执行第二个命令（两个符号具有相同的作用，特殊情况下有区别）一直执行到成功为止</li>
+</ul>
+</li>
+<li>
+<p>管道符号（运算）</p>
+<ul>
+<li>| A|B A命令的输出结果会作为B命令的输入</li>
+<li>dir  | find &quot;.txt&quot;</li>
+<li>netstat -ano | find &quot;ESTABLISHED&quot;</li>
+</ul>
+</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[批处理学习之二——内部命令]]></title>
+        <id>https://asduxb43.github.io/post/pi-chu-li-xue-xi-zhi-er-nei-bu-ming-ling/</id>
+        <link href="https://asduxb43.github.io/post/pi-chu-li-xue-xi-zhi-er-nei-bu-ming-ling/">
+        </link>
+        <updated>2022-08-08T07:23:21.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="二-内部命令windows系统自带">二、内部命令（windows系统自带）</h4>
+<ol>
+<li><a href="http://www.cnblogs.com/klchang/p/4771101.html">windows系统自带的cmd命令</a></li>
+<li>外部命令
+<ul>
+<li>python</li>
+<li>java</li>
+</ul>
+</li>
+</ol>
+<hr>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[批处理学习之一——常用命令]]></title>
+        <id>https://asduxb43.github.io/post/1chang-yong-ming-ling/</id>
+        <link href="https://asduxb43.github.io/post/1chang-yong-ming-ling/">
+        </link>
+        <updated>2022-08-08T07:22:25.000Z</updated>
+        <content type="html"><![CDATA[<h5 id="一-常用命令">一、常用命令</h5>
+<ol>
+<li>注意：windos下命令不区分大小写</li>
+<li>echo 输出命令
+<ul>
+<li>输出变量时格式为 %var%</li>
+</ul>
+</li>
+<li><code>@echo off</code> 不输出盘符与路径</li>
+<li>pause 等待</li>
+<li>一般的一个批处理文件都需要在前后加这两句代码</li>
+<li>cls 清屏</li>
+<li>ipconfig 查看网卡</li>
+<li>net user 查看所有用户</li>
+<li>netstat -an 查看所有网络连接</li>
+<li>到某个路径下，可以复制路径，cd 路径</li>
+</ol>
+<hr>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[批处理学习笔记目录]]></title>
+        <id>https://asduxb43.github.io/post/pi-chu-li-xue-xi-bi-ji-mu-lu/</id>
+        <link href="https://asduxb43.github.io/post/pi-chu-li-xue-xi-bi-ji-mu-lu/">
+        </link>
+        <updated>2022-08-08T07:15:25.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="批处理学习笔记目录">批处理学习笔记目录</h2>
+<h3 id="一-常用命令">一、<a href="C:%5CUsers%5C27803%5CDesktop%5C%E6%89%B9%E5%A4%84%E7%90%86%E5%AD%A6%E4%B9%A0%5C1.%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html">常用命令</a></h3>
+<h3 id="二-内部命令">二、<a href="C:%5CUsers%5C27803%5CDesktop%5C%E6%89%B9%E5%A4%84%E7%90%86%E5%AD%A6%E4%B9%A0%5C2.%E5%86%85%E9%83%A8%E5%91%BD%E4%BB%A4.html">内部命令</a></h3>
+<h3 id="三-批处理运算操作">三、<a href="C:%5CUsers%5C27803%5CDesktop%5C%E6%89%B9%E5%A4%84%E7%90%86%E5%AD%A6%E4%B9%A0%5C3.%E6%89%B9%E5%A4%84%E7%90%86%E8%BF%90%E7%AE%97%E6%93%8D%E4%BD%9C.html">批处理运算操作</a></h3>
+<h4 id="1算数运算">1.<a href="">算数运算</a></h4>
+<h4 id="2重定向运算">2.<a href="">重定向运算</a></h4>
+<h4 id="3关系运算">3.<a href="">关系运算</a></h4>
+<h4 id="4多命令运算">4.<a href="">多命令运算</a></h4>
+<h4 id="5-管道符号运算">5. <a href="">管道(符号)运算</a></h4>
+<h3 id="四-批处理基本命令">四、<a href="C:%5CUsers%5C27803%5CDesktop%5C%E6%89%B9%E5%A4%84%E7%90%86%E5%AD%A6%E4%B9%A0%5C4.%E6%89%B9%E5%A4%84%E7%90%86%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4.html">批处理基本命令</a></h3>
+<h4 id="1-命令格式">1. <a href="">命令格式</a></h4>
+<h4 id="2-批处理文件参数传递">2. <a href="">批处理文件参数传递</a></h4>
+<h4 id="4-时间相关命令">4. <a href="">时间相关命令</a></h4>
+<h4 id="5-启动命令">5. <a href="">启动命令</a></h4>
+<h4 id="6-调用其他bat文件">6. <a href="">调用其他bat文件</a></h4>
+<h4 id="7-任务列表查看命令">7. <a href="">任务列表查看命令</a></h4>
+<h4 id="9-文件夹结构查看命令">9. <a href="">文件夹结构查看命令</a></h4>
+<h4 id="10-关机重启命令">10. <a href="">关机/重启命令</a></h4>
+<h4 id="11-计划任务命令">11. <a href="">计划任务命令</a></h4>
+<h4 id="12-环境变量">12. <a href="">环境变量</a></h4>
+<h3 id="五-文件夹或文件相关命令">五、<a href="C:%5CUsers%5C27803%5CDesktop%5C%E6%89%B9%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6%5C5.%E6%96%87%E4%BB%B6%E5%A4%B9%E6%88%96%E6%96%87%E4%BB%B6%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4">文件夹或文件相关命令</a></h3>
+<h3 id="六-网络相关命令">六、<a href="C:%5CUsers%5C27803%5CDesktop%5C%E6%89%B9%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6%5C6.%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4.md">网络相关命令</a></h3>
+<h3 id="七-条件判断结构">七、<a href="C:%5CUsers%5C27803%5CDesktop%5C%E6%89%B9%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6%5C7.%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD%E7%BB%93%E6%9E%84.md">条件判断结构</a></h3>
+<h3 id="八-循环结构">八、<a href="C:%5CUsers%5C27803%5CDesktop%5C%E6%89%B9%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6%5C8.%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84.md">循环结构</a></h3>
+<h3 id="九-编程实际案例">九、<a href="C:%5CUsers%5C27803%5CDesktop%5C%E6%89%B9%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6%5C9.%E7%BC%96%E7%A8%8B%E5%AE%9E%E9%99%85%E6%A1%88%E4%BE%8B.md">编程实际案例</a></h3>
+<h3 id="十-virus脚本分析">十、<a href="C:%5CUsers%5C27803%5CDesktop%5C%E6%89%B9%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6%5C10.Virus%E8%84%9A%E6%9C%AC%E5%88%86%E6%9E%90.md">Virus脚本分析</a></h3>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[latex参考文献写作时遇到的一些坑(使用gb7714-2015样式)]]></title>
+        <id>https://asduxb43.github.io/post/latex-can-kao-wen-xian-xie-zuo-shi-yu-dao-de-yi-xie-keng-shi-yong-gb7714-2015-yang-shi/</id>
+        <link href="https://asduxb43.github.io/post/latex-can-kao-wen-xian-xie-zuo-shi-yu-dao-de-yi-xie-keng-shi-yong-gb7714-2015-yang-shi/">
+        </link>
+        <updated>2022-04-09T04:43:11.000Z</updated>
+        <content type="html"><![CDATA[<ol start="2">
+<li>参考文献的key值需与文中的引用一致</li>
+<li>对gb7714-2015参考文献进行xelatex biber xelatex xelatex等命令才能在pdf文档中看到文献列表</li>
+<li>参考文献中使用<code>*****\yearcite(xxxx)</code>引用时，key值(xxxx)不能有空格</li>
+<li>待补充....</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[启动盘恢复原来的U盘方法]]></title>
+        <id>https://asduxb43.github.io/post/win32-disk-imager-ke-lu-guo-de-u-pan-hui-fu-rong-liang-de-fang-fa/</id>
+        <link href="https://asduxb43.github.io/post/win32-disk-imager-ke-lu-guo-de-u-pan-hui-fu-rong-liang-de-fang-fa/">
+        </link>
+        <updated>2022-02-25T13:26:35.000Z</updated>
+        <content type="html"><![CDATA[<p>将制作为启动盘的U盘恢复成原来的U盘<br>
+windows+R打开输入diskpart，具体操作方法见 <a href="https://cloud.tencent.com/developer/article/1489500">Win32 Disk Imager刻录过的U盘恢复容量的方法</a></p>
+]]></content>
+    </entry>
+</feed>
